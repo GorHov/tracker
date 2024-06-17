@@ -60,6 +60,7 @@ class Tracker {
   }
 
   private sendTrackData(tracks: TrackData[]): void {
+    
     fetch(this.trackEndpoint, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
